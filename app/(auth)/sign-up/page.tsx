@@ -7,6 +7,8 @@ import Image from "next/image";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/utils/auth";
 import { redirect } from "next/navigation";
+import GithubSignInButton from "@/app/components/GithubSignInButton";
+import GoogleSignInButton from "@/app/components/GoogleSignInButton";
 
 const SignUp = async () => {
   const sessions = await getServerSession(authOptions)
@@ -39,7 +41,7 @@ const SignUp = async () => {
       </div>
 
       <div className="flex w-full justify-center items-center gap-x-3 mt-6">
-        <Button variant="outline" size="icon">
+        {/* <Button variant="outline" size="icon">
           <GithubIcon className="w-4 h-4" />
         </Button>
         <Button variant="outline" size="icon">
@@ -48,7 +50,9 @@ const SignUp = async () => {
             alt="Google icon"
             className="w-6 h-6"
           />
-        </Button>
+        </Button> */}
+        <GithubSignInButton />
+        <GoogleSignInButton />
       </div>
 
     </div>

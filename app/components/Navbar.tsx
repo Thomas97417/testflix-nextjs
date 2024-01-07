@@ -32,7 +32,7 @@ const Navbar = () => {
             priority
           />
         </Link>
-        <ul className="lg:flex gap-x-4 ml-14 hidden">
+        <ul className="md:flex gap-x-4 ml-14 hidden">
           {links.map((link, index) => (
             <div key={index}>
               {pathname === link.href ? (

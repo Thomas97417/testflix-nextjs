@@ -28,6 +28,7 @@ const PlayVideoModal = ({changeState, overview, state, title, youtubeUrl, age, d
           src={youtubeUrl}
           height={250}
           className="w-full"
+          allowFullScreen
         />
       </DialogContent>
     </Dialog>

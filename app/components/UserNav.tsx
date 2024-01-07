@@ -2,16 +2,19 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuSeparator, DropdownMenuLabel, DropdownMenuTrigger, DropdownMenuItem } from "@/components/ui/dropdown-menu"
-import { signOut } from "next-auth/react"
+import { signOut, useSession } from "next-auth/react"
 
 const UserNav = () => {
+  const { data: session } = useSession()
+  const callbackUrl = process.env.NODE_ENV === "production" ? 'https://testflix-nextjs.vercel.app/login' : 'http://localhost:3000/login'
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="relative h-10 w-10 rounded-sm">
           <Avatar className="h-10 w-10 rounded-sm">
             <AvatarImage src="https://cgrsdzdjkpxwvyznkqaa.supabase.co/storage/v1/object/public/user%20image/avatar.png" />
-            <AvatarFallback className="rounded-sm">TOMA</AvatarFallback>
+            <AvatarFallback className="rounded-sm">USER</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
@@ -19,12 +22,12 @@ const UserNav = () => {
       <DropdownMenuContent className="w-56" align="end" forceMount>
         <DropdownMenuLabel>
           <div className="flex flex-col space-y-1">
-            <p className="text-sm font-medium leading-none">TOMA</p>
-            <p className="text-xs leading-none text-muted-foreground">efcoqsihefioh@gmail.com</p>
+            <p className="text-sm font-medium leading-none">{session?.user?.name}</p>
+            <p className="text-xs leading-none text-muted-foreground">{session?.user?.email}</p>
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem onClick={() => signOut({ callbackUrl: 'http://localhost:3000/login' })}>
+        <DropdownMenuItem onClick={() => signOut({ callbackUrl: callbackUrl })}>
           Sign Out
         </DropdownMenuItem>
       </DropdownMenuContent>
