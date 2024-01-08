@@ -20,8 +20,8 @@ const PlayVideoModal = ({changeState, overview, state, title, youtubeUrl, age, d
           <DialogDescription className="line-clamp-3">{overview}</DialogDescription>
           <div className="flex gap-x-2 items-center">
             <p>{release}</p>
-            <p className="border py-0.5 px-1 border-gray-200 rounded">{age}+</p>
-            <p>{duration}h</p>
+            {age > 0 && <p className="border py-0.5 px-1 border-gray-200 rounded">{age}+</p>}
+            {duration > 0 && <p>{Math.floor(duration)}h{Math.round((duration - Math.floor(duration)) * 60).toString().padStart(2, '0')}</p>}
           </div>
         </DialogHeader>
         <iframe

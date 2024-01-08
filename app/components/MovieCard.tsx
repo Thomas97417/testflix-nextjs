@@ -51,8 +51,8 @@ const MovieCard = ({movieId, overview, title, watchList, watchListId, youtubeUrl
         <h1 className="font-bold text-lg line-clamp-1">{title}</h1>
         <div className="flex gap-x-2 items-center">
           <p className="font-normal text-sm">{year}</p>
-          <p className="font-normal border py-0.5 px-1 border-gray-200 rounded text-sm">{age}+</p>
-          <p className="font-normal text-sm">{time}h</p>
+          { age > 0 ? <p className="font-normal border py-0.5 px-1 border-gray-200 rounded text-sm">{age}+</p> : null }
+          { time > 0 && <p className="font-normal text-sm">{Math.floor(time)}h{Math.round((time - Math.floor(time)) * 60).toString().padStart(2, '0')}</p> }
         </div>
         <p className="line-clamp-1 text-sm text-gray-200 font-light">
           {overview}
