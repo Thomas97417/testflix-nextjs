@@ -46,7 +46,7 @@ const WatchList = async () => {
               className="rounded-sm absolute w-full h-full object-cover"
               priority
             />
-            <div className="h-60 relative z-10 w-full transform transition duration-500 hover:scale-125 opacity-0 hover:opacity-100">
+            <div className="h-60 relative z-10 w-full transform transition duration-500 sm:hover:scale-125 opacity-0 hover:opacity-100">
               <div className="bg-gradient-to-b from-transparent via-black/50 to-black z-10 w-full h-full rounded-lg flex items-center justify-center">
                 <Image
                   src={movie.Movie?.imageString as string}
