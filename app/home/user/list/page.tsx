@@ -34,7 +34,7 @@ const WatchList = async () => {
   const data = await getData(session?.user?.email as string)
   return (
     <>
-      <h1 className="text-white text-4xl font-bold underline mt-10 px-5 sm:px-0">Your WatchList</h1>
+      <h1 className="text-white text-4xl font-bold mt-10 px-5 sm:px-0">Your WatchList</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-5 sm:px-0 mt-10 gap-6">
         {data.map((movie) => (
           <div key={movie.Movie?.id} className="relative h-60">
