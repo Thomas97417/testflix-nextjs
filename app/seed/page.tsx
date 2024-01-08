@@ -8,160 +8,144 @@ const SeedDatabase = () => {
     await prisma.movie.createMany({
       data: [
         {
-          id: 0,
-          title: "Gran Turismo",
-          age: 12,
-          duration: 2.15,
-          overview:
-            "The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver.",
-          videoSource:
-            "https://utfs.io/f/916e1354-a1b6-4832-97ab-9fa95876b91a-bnyedt.mp4",
+          id: 11,
+          title: "Oppenheimer",
+          age: 10,
+          duration: 3.01,
           imageString:
-            "https://image.tmdb.org/t/p/original/r7DuyYJ0N3cD8bRKsR5Ygq2P7oa.jpg",
-          release: 2023,
-          category: "recent",
-          youtubeString: "https://www.youtube.com/embed/GVPzGBvPrzw",
-        },
-        {
-          imageString:
-            "https://image.tmdb.org/t/p/original/kHlX3oqdD4VGaLpB8O78M25KfdS.jpg",
-          title: "A Haunting in Venice",
-          age: 12,
-          duration: 1.44,
-          id: 1,
+            "https://www.themoviedb.org/t/p/original/boAUuJBeID7VNp4L7LNMQs8mfQS.jpg",
           overview:
-            "Celebrated sleuth Hercule Poirot, now retired and living in self-imposed exile in Venice, reluctantly attends a Halloween séance at a decaying, haunted palazzo. When one of the guests is murdered, the detective is thrust into a sinister world of shadows and secrets.",
+            "In 1942, during World War II, U.S. Army Colonel Leslie Groves recruits Oppenheimer to lead the Manhattan Project to develop an atomic bomb. Oppenheimer, who is Jewish, is particularly driven by the concern that the German nuclear research program, led by Heisenberg, might yield a fission bomb for the Nazis.",
           release: 2023,
           videoSource: "",
-          category: "recent",
-          youtubeString: "https://www.youtube.com/embed/yEddsSwweyE",
+          category: "movie",
+          youtubeString: "https://www.youtube.com/watch?v=bK6ldnjE3Y0",
         },
         {
-          id: 2,
-          title: "Five Nights at Freddy's",
-          age: 16,
-          duration: 1.5,
-          overview:
-            "Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems.",
-          release: 2023,
-          videoSource: "",
+          id: 12,
+          title: "Drive",
+          age: 12,
+          duration: 1.40,
           imageString:
-            "https://image.tmdb.org/t/p/original/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg",
-          category: "recent",
-          youtubeString: "https://www.youtube.com/embed/0VH9WCFV6XQ",
+            "https://www.themoviedb.org/t/p/original/mUKm5eaYm30KYyaudRn5tA204ua.jpg",
+          overview:
+            "A mysterious Hollywood action film stuntman gets in trouble with gangsters when he tries to help his neighbor's husband rob a pawn shop while serving as his getaway driver.",
+          release: 2011,
+          videoSource: "",
+          category: "movie",
+          youtubeString: "https://www.youtube.com/watch?v=KBiOF3y1W0Y",
         },
-
         {
-          id: 3,
-          title: "The Blacklist",
-          age: 16,
+          id: 13,
+          title: "The Godfather",
+          age: 12,
+          duration: 2.55,
+          imageString:
+            "https://www.themoviedb.org/t/p/original/wnDNKCeBQzioXYQrXcSyrmRHVxf.jpg",
+          overview:
+            "In late summer 1945, guests are gathered for the wedding reception of Don Vito Corleone's daughter Connie (Talia Shire) and Carlo Rizzi (Gianni Russo). Vito (Marlon Brando), the head of the Corleone Mafia family, is known to friends and associates as \"Godfather\".",
+          release: 1972,
+          videoSource: "",
+          category: "movie",
+          youtubeString: "https://www.youtube.com/watch?v=Ew9ngL1GZvs",
+        },
+        {
+          id: 14,
+          title: "The Office",
+          age: 0,
           duration: 0,
           imageString:
-            "https://image.tmdb.org/t/p/original/dDPwCyZG8arYwMDoQl0sm4xccCE.jpg",
-          overview: `Raymond "Red" Reddington, one of the FBI's most wanted fugitives, surrenders in person at FBI Headquarters in Washington, D.C. He claims that he and the FBI have the same interests: bringing down dangerous criminals and terrorists. In the last two decades, he's made a list of criminals and terrorists that matter the most but the FBI cannot find because it does not know they exist. Reddington calls this "The Blacklist". Reddington will co-operate, but insists that he will speak only to Elizabeth Keen, a rookie FBI profiler`,
+            "https://www.themoviedb.org/t/p/original/2dApsoX4bd98szjrbj5i3syYOh2.jpg",
+          overview:
+            "A mediocre paper company in the hands of Scranton, PA branch manager Michael Scott. This mockumentary follows the everyday lives of the manager and the employees he \"manages\". The crew follows the employees around 24/7 and captures their quite humorous and bizarre encounters as they will do what it takes to keep the company thriving.",
+          release: 2005,
+          videoSource: "",
+          category: "show",
+          youtubeString: "https://www.youtube.com/watch?v=mfokPqeSNcw",
+        },
+        {
+          id: 15,
+          title: "Cyberpunk: Edgerunners",
+          age: 17,
+          duration: 0,
+          imageString:
+            "https://www.themoviedb.org/t/p/original/74Oo4hRy9xadpDZGqsWu2XqoNje.jpg",
+          overview:
+            "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+          release: 2023,
+          videoSource: "",
+          category: "show",
+          youtubeString: "https://www.youtube.com/watch?v=JtqIas3bYhg",
+        },
+        {
+          id: 16,
+          title: "Rick and Morty",
+          age: 18,
+          duration: 0,
+          imageString:
+            "https://www.themoviedb.org/t/p/original/kKsdvIOfWhqw5ZfAepi5EZqhrsP.jpg",
+          overview:
+            "The series follows the misadventures of alcoholic scientist Rick and his overly nervous grandson Morty, who split their time between domestic family life and intergalactic travel.",
           release: 2013,
           videoSource: "",
           category: "show",
-          youtubeString: "https://www.youtube.com/embed/-WYdUaK54fU",
+          youtubeString: "https://www.youtube.com/watch?v=jerFRSQW9g8",
         },
         {
-          id: 4,
-          title: "Suits",
-          age: 12,
-          duration: 0,
+          id: 17,
+          title: "Dune",
+          age: 13,
+          duration: 2.35,
           imageString:
-            "https://image.tmdb.org/t/p/original/or0E36KfzJYZwqXeiCfm1JgepKF.jpg",
+            "https://www.themoviedb.org/t/p/original/qpyaW4xUPeIiYA5ckg5zAZFHvsb.jpg",
           overview:
-            "While running from a drug deal gone bad, Mike Ross, a brilliant young college-dropout, slips into a job interview with one of New York City's best legal closers, Harvey Specter. Tired of cookie-cutter law school grads, Harvey takes a gamble by hiring Mike on the spot after he recognizes his raw talent and photographic memory.",
-          release: 2011,
+            "Year 10191. Summoned by the emperor to take over the stewardship of the arid, inhospitable planet Arrakis--the only source of Spice, the sacred hallucinogen--Duke Leto of the noble House Atreides and his family travel to the peril-laden exoplanet. But there, beset by indecipherable visions, the duke's gifted son, Paul Atreides, finds himself caught between two worlds as the grotesque Baron Vladimir of the brutal House Harkonnen plots revenge. Now, the road to legend leads deep into the desert. Can Paul fulfil his destiny in far-off Dune, the home of the mysterious, blue-eyed Fremen?",
+          release: 2021,
           videoSource: "",
-          category: "show",
-          youtubeString: "https://www.youtube.com/embed/85z53bAebsI",
+          category: "movie",
+          youtubeString: "https://www.youtube.com/watch?v=n9xhJrPXop4",
         },
         {
-          id: 5,
-          title: "Chernobyl",
-          age: 16,
-          duration: 0,
+          id: 18,
+          title: "The Boy and the Heron",
+          age: 11,
+          duration: 2.04,
           imageString:
-            "https://image.tmdb.org/t/p/original/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
+            "https://www.themoviedb.org/t/p/original/pqCsZON3RbMYw97KK9SKeYfnL4J.jpg",
           overview:
-            "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+            "After losing his mother during the war, young Mahito moves to his family's estate in the countryside. There, a series of mysterious events lead him to a secluded and ancient tower, home to a mischievous gray heron.",
+          release: 2023,
+          videoSource: "",
+          category: "movie",
+          youtubeString: "https://www.youtube.com/watch?v=f7EDFdA10pg",
+        },
+        {
+          id: 19,
+          title: "Parasite",
+          age: 14,
+          duration: 2.15,
+          imageString:
+            "https://www.themoviedb.org/t/p/original/7hLSzZX2jROmEXz2aEoh6JKUFy2.jpg",
+          overview:
+            "Min-hyuk, a university student, gives the family a scholar's rock meant to promise wealth. Leaving to study abroad, he suggests that the Kims' son, Ki-woo, pose as a university student to take over his job as an English language tutor for Da-hye, the daughter of the rich Park family.",
           release: 2019,
           videoSource: "",
-          category: "show",
-          youtubeString: "https://www.youtube.com/embed/s9APLXM9Ei8",
-        },
-        {
-          id: 6,
-          title: "Retribution",
-          age: 12,
-          duration: 1.31,
-          imageString:
-            "https://image.tmdb.org/t/p/original/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg",
-          overview:
-            "When a mysterious caller puts a bomb under his car seat, Matt Turner begins a high-speed chase across the city to complete a specific series of tasks- all with his kids trapped in the back seat.",
-          release: 2023,
-          videoSource: "",
-          category: "recent",
-          youtubeString: "https://www.youtube.com/embed/jzQn0-WH4WM",
-        },
-        {
-          id: 7,
-          title: "Spider-Man: Across the Spider-Verse",
-          age: 12,
-          duration: 2.2,
-          imageString:
-            "https://image.tmdb.org/t/p/original/nGxUxi3PfXDRm7Vg95VBNgNM8yc.jpg",
-          overview:
-            "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse’s very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
-          release: 2023,
-          videoSource: "",
           category: "movie",
-          youtubeString: "https://www.youtube.com/embed/shW9i6k8cB0",
-        },
-
-        {
-          id: 8,
-          title: "Coco",
-          release: 2017,
-          age: 0,
-          duration: 1.45,
-          imageString:
-            "https://image.tmdb.org/t/p/original/askg3SMvhqEl4OL52YuvdtY40Yb.jpg",
-          overview:
-            "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
-          videoSource: "",
-          category: "movie",
-          youtubeString: "https://www.youtube.com/embed/xlnPHQ3TLX8",
+          youtubeString: "https://www.youtube.com/watch?v=SEUXfv87Wpk",
         },
         {
-          id: 9,
-          title: "Monk",
-          release: 2002,
-          age: 12,
-          duration: 0,
-          imageString:
-            "https://image.tmdb.org/t/p/original/cTQYB39EwM01fl9b9KpNUgZfOsT.jpg",
-          overview:
-            "Adrian Monk was once a rising star with the San Francisco Police Department, legendary for using unconventional means to solve the department's most baffling cases. But after the tragic (and still unsolved) murder of his wife Trudy, he developed an extreme case of obsessive-compulsive disorder. Now working as a private consultant, Monk continues to investigate cases in the most unconventional ways.",
-          videoSource: "",
-          category: "show",
-          youtubeString: "https://www.youtube.com/embed/mftbaaU82Uc",
-        },
-        {
-          id: 10,
-          title: "Family Guy",
+          id: 20,
+          title: "Arcane",
           age: 16,
           duration: 0,
           imageString:
-            "https://image.tmdb.org/t/p/original/y4PDksvxM05sNxacoU8xIYITCDA.jpg",
+            "https://www.themoviedb.org/t/p/original/ypS7R36Vjcn51zZsXsta5onnaCo.jpg",
           overview:
-            "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
-          release: 1999,
+            "In the cities of Piltover and Zaun, tensions rise as inventors, hooligans, politicians, and crime lords grow increasingly dissatisfied with the constraints of a devastated society. With the situation on the verge of being unsustainable, two sisters steal an artifact of immeasurable power. Discovery and danger collide as heroes are born and bonds are broken. Will this power change the world? Or will it lead to ruin? This is the world of Arcane.",
+          release: 2021,
           videoSource: "",
           category: "show",
-          youtubeString: "https://www.youtube.com/embed/7hRxWGo49oc",
+          youtubeString: "https://www.youtube.com/watch?v=fXmAurh012s",
         },
       ],
     });
